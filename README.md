@@ -1,7 +1,7 @@
 # Fibonacci counter
 Scality OA /2023-08-13/
 
-[![N|Solid](https://vercel.com/button)](https://scality-ijoc0e9vc-tselmeg8070.vercel.app)
+[Run demo](https://scality-ijoc0e9vc-tselmeg8070.vercel.app)
 
 ## Exercise Overview
 Your mission is to craft a React application featuring a counter with an increment button.
@@ -16,17 +16,16 @@ Design your solution with user experience at the forefront. Consider your soluti
 - Fibonacci indication ruler
 - Counter with simple button
 - Settings for thresholds
+- Threshold warning
 - Magical animation
 
 
 ## Tech
-
 - [NextJS] - ReactJS framework which allows SSR
 - [p5.js] - awesome javascript animation library
 - [tailwind css] - Modern css framework
 
 ## Getting Started
-
 First, run the development server:
 
 ```bash
