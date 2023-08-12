@@ -1,15 +1,21 @@
-import { useEffect, useState } from 'react'
+interface SettingsComponentProps {
+	thresholdFirst: number;
+	setThresholdFirst: React.Dispatch<React.SetStateAction<number>>;
+	thresholdSecond: number;
+	setThresholdSecond: React.Dispatch<React.SetStateAction<number>>;
+	fibboCalculate: (n: number) => void;
+}
 
-export default function SettingsComponnent({
+const SettingsComponent: React.FC<SettingsComponentProps> = ({
 	thresholdFirst,
 	setThresholdFirst,
 	thresholdSecond,
 	setThresholdSecond,
 	fibboCalculate
-})
-{
+}) => {
 
-	const onChangeThresholdSecond = (e:React.ChangeEvent<HTMLInputElement>) => {
+
+	const onChangeThresholdSecond = (e: React.ChangeEvent<HTMLInputElement>) => {
 		let value = parseInt(e.target.value);
 		if (!isNaN(value) && value > 0) {
 			if (thresholdFirst > value)
@@ -22,7 +28,7 @@ export default function SettingsComponnent({
 		}
 	}
 
-	const onChangeThresholdFirst = (e:React.ChangeEvent<HTMLInputElement>) => {
+	const onChangeThresholdFirst = (e: React.ChangeEvent<HTMLInputElement>) => {
 		let value = parseInt(e.target.value);
 		if (!isNaN(value) && value > 0) {
 			if (value < thresholdSecond)
@@ -61,3 +67,5 @@ export default function SettingsComponnent({
 		</div>
 	)
 }
+
+export default SettingsComponent;
