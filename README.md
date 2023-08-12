@@ -1,7 +1,7 @@
 # Fibonacci counter
 Scality OA /2023-08-13/
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://vercel.com/button)](https://scality-ijoc0e9vc-tselmeg8070.vercel.app)
 
 ## Exercise Overview
 Your mission is to craft a React application featuring a counter with an increment button.
