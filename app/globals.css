@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 70, 87, 117;
+}
+
+body {
+  background: rgb(var(--background-rgb));
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
